@@ -111,6 +111,7 @@ body {
 
 .glitch-text {
   position: relative;
+  display: flex;
   font-size: 3.5rem;
   font-weight: 900;
   font-family: 'Orbitron', 'Rajdhani', sans-serif;
@@ -119,6 +120,7 @@ body {
   text-transform: uppercase;
   text-shadow: 0 0 15px rgba(255, 0, 51, 0.8);
   z-index: 1;
+text-align: center;
 }
 
 .glitch-text::before {
@@ -207,6 +209,7 @@ body {
   opacity: 0.85;
   animation: blink 1.2s infinite;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .progress-bar {

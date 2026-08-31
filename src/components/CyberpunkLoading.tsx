@@ -73,7 +73,7 @@ export default function CyberpunkLoading() {
       <div className="scanlines" aria-hidden="true" />
 
       <h1
-        className="glitch-text"
+        className="glitch-text "
         data-text={done ? "ACESSO LIBERADO" : "ACESSANDO PORTFÓLIO"}
       >
         {done ? "ACESSO LIBERADO" : "ACESSANDO PORTFÓLIO"}

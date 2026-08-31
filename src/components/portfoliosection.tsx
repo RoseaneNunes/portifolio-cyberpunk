@@ -108,12 +108,12 @@ export const PortfolioSection = () => {
       <span className="pointer-events-none absolute bottom-0 left-0 h-6 w-6 border-b-2 border-l-2 border-[#ff0033] corner-glitch" />
       <span className="pointer-events-none absolute bottom-0 right-0 h-6 w-6 border-b-2 border-r-2 border-[#ff0033] corner-glitch" />
       <div className="mx-auto flex w-full max-w-[1700px] flex-col">
-        <header className="animate-[portfolioReveal_820ms_cubic-bezier(0.22,1,0.36,1)_both]">
+        <header className="relative w-full animate-[portfolioReveal_820ms_cubic-bezier(0.22,1,0.36,1)_both]">
           <h2
             id="portfolio-heading"
-            className="whitespace-nowrap text-center font-[Orbitron] text-[clamp(26px,7.5vw,32px)] font-bold leading-tight text-W6 sm:text-left sm:text-[40px] lg:text-[48px] xl:pl-32"
+            className="whitespace-nowrap w-full text-center font-[Orbitron] text-[25px] font-bold  text-W6 sm:text-left sm:text-[40px] lg:text-[48px] xl:pl-32"
           >
-             <span className="text-[#ff0033]">Projetos</span> dos quais fiz parte
+             <span className="text-[#ff0033] ">Projetos</span> dos quais fiz parte
           </h2>
         </header>
 

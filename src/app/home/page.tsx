@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col justify-end ">
             {" "}
-            <h1 className="font-[Orbitron] text-4xl font-black tracking-[4px] text-[#ff0033] md:text-5xl">
+            <h1 className="font-[Orbitron] text-4xl max-sm:text-center font-black tracking-[4px] text-[#ff0033] md:text-5xl">
               ROSEANE NUNES
             </h1>
             <span className="mt-4 inline-block bg-[#ff0033] px-4 py-1.5 font-[Orbitron] text-sm font-bold uppercase tracking-[3px] text-white">
@@ -88,7 +88,7 @@ export default function Home() {
               {"// SOBRE MIM"}
             </h2>
             <p className="font-[Rajdhani] text-base leading-[1.7] tracking-[0.5px] text-white/85">
-              Olá! Sou Roseane Nunes, tenho 20 anos e sou estudante do 7º
+              Olá! Sou Roseane Nunes, tenho 22 anos e sou estudante do 7º
               período de Ciência da Computação, apaixonada por tecnologia desde
               pequena, quando meu pai se tornou proprietário de uma lan house,
               local onde tive meus primeiros contatos com computadores. Faço
