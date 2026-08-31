@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Cyberpunk
 
-## Getting Started
+Portfólio pessoal de **Roseane Nunes** — desenvolvedora front end — com estética cyberpunk (vermelho neon, efeitos de glitch e marcadores de canto), construído com Next.js, React e Tailwind CSS.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)
+![React](https://img.shields.io/badge/React-19-61dafb?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
+![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-4-06b6d4?logo=tailwindcss)
+
+## ✨ Funcionalidades
+
+- **Tela de carregamento cyberpunk** — boot log com barra de progresso e efeito de "hacking", liberando o acesso ao portfólio.
+- **Seção inicial / sobre mim** — foto de perfil com efeito glitch, apresentação e botões para LinkedIn e GitHub, sobre fundo com filtro vermelho.
+- **Carrossel de projetos** — 6 projetos em carrossel infinito com auto-rotação, cards com logo e navegação (anterior/próximo).
+- **Seção de stacks** — 12 tecnologias com ícones, efeito glitch por card e tooltip de descrição ao passar o mouse.
+- **Efeitos visuais** — cantos em vermelho neon, glitch de foto e de cards, animações de reveal.
+- **Favicon próprio** — `icon.svg`.
+
+## 🚀 Iniciando
+
+Requisitos: Node.js 18+ (ou 20+ recomendado).
 
 ```bash
+# instalar dependências
+npm install
+
+# servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # servidor de desenvolvimento
+npm run build    # build de produção
+npm run start    # serve o build de produção
+npm run lint     # executa o eslint
+```
 
-## Learn More
+## 🗂 Estrutura de pastas
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── globals.css        # tema, cores e keyframes (glitch, corners)
+│   ├── icon.svg           # favicon
+│   ├── layout.tsx         # layout raiz e fontes (Quantico, Montserrat)
+│   ├── page.tsx           # rota raiz → loading
+│   └── home/
+│       └── page.tsx       # seção inicial e sobre mim
+├── components/
+│   ├── CyberpunkLoading.tsx  # tela de boot
+│   ├── portfoliosection.tsx  # carrossel de projetos
+│   ├── stacks-section.tsx    # tecnologias
+│   └── ui/
+│       ├── index.ts
+│       └── carousel/         # carrossel, nav button e card de projeto
+public/
+└── assets/
+    ├── icons/            # ícones de stacks e redes sociais
+    └── logos/            # logos dos projetos
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Personalização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Cores do tema**: definidas em `src/app/globals.css` (variáveis `--color-*`).
+- **Foto de perfil**: substitua a URL no `src/app/home/page.tsx` ou informe um arquivo `public/perfil.jpg`.
+- **Projetos**: edite o array `PORTFOLIO_PROJECTS` em `src/components/portfoliosection.tsx`.
+- **Stacks**: edite o array `STACKS` em `src/components/stacks-section.tsx`.
+- **Links sociais**: `LINKEDIN_URL` e `GITHUB_URL` em `src/app/home/page.tsx`.
 
-## Deploy on Vercel
+## 🧑‍💻 Tecnologias
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+JavaScript, TypeScript, React, Next.js, Vue.js, Vite, Java, Git, HTML5, CSS3, Figma e Sanity — conforme exibido na seção de stacks.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licença
+
+Projeto pessoal.
