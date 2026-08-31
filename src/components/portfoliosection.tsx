@@ -65,7 +65,7 @@ const PORTFOLIO_PROJECTS: PortfolioProjectCardData[] = [
     title: "CommercialHub",
     subtitle: "Sistema de Gerenciamento de Aluguéis",
     logo: logoCommercialHub,
-    href: "https://www.lidericonsultoria.com/",
+    href: "https://projeto-es-commercial-hub.vercel.app/",
     glitchDuration: 5,
   },
 ];
